@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+@import '../abstracts/mixins';
+
 
 :root
 {
@@ -9,3 +11,16 @@
     --fw-extra-bold: 800;
     --fw-semibold: 600;
 }
+
+body
+{
+    font-family: var(--ff-base);
+}
+
+
+a {
+    color: $primary-black;
+    text-decoration: none;
+    font-weight: var(--fw-semibold);
+    // font-weight: var(--fw-regular);
+  }

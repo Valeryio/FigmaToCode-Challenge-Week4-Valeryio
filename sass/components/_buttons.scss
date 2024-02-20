@@ -1,0 +1,19 @@
+
+%btn
+{
+    border: none;
+    cursor: pointer;
+    padding: 16px 32px;
+    @include flex-mixin(space-between);
+}
+
+.primary-button
+{
+    @extend %btn;
+
+    color: white;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(/ressources/icons/download.svg);
+    background-color: $primary-black;
+}

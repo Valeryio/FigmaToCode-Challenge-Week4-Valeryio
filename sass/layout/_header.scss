@@ -1,0 +1,21 @@
+@import '../abstracts/mixins';
+
+header
+{
+    --padding-spacing: 6rem;
+
+    @include flex-mixin(space-between);
+    @include border;
+
+    width: 100%;
+    padding: 1.5rem var(--padding-spacing);
+
+}
+
+.navbar-links ul
+{
+    gap: 2rem;
+    list-style: none;
+    font-size: 16px;
+    @include flex-mixin(space-between);
+}

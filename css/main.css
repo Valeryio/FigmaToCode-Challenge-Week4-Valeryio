@@ -1,10 +1,93 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
 :root {
   --ff-base: "Sora", sans-serif;
   --fw-bold: 700;
   --fw-regular: 400;
   --fw-extra-bold: 800;
   --fw-semibold: 600;
+}
+
+body {
+  font-family: var(--ff-base);
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  font-weight: var(--fw-semibold);
+}
+
+.primary-button {
+  border: none;
+  cursor: pointer;
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.primary-button {
+  color: white;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url(/ressources/icons/download.svg);
+  background-color: #000;
+}
+
+header {
+  --padding-spacing: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  border: 1px solid black;
+  width: 100%;
+  padding: 1.5rem var(--padding-spacing);
+}
+
+.navbar-links ul {
+  gap: 2rem;
+  list-style: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 /*# sourceMappingURL=main.css.map */
