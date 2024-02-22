@@ -51,22 +51,27 @@ a {
   font-weight: var(--fw-semibold);
 }
 
-.primary-button {
+button[data-icon=download] {
   border: none;
+  color: white;
   cursor: pointer;
   padding: 16px 32px;
+  background-color: #000;
+}
+
+button[data-icon=download] {
+  gap: 0.8rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-flow: row wrap;
 }
 
-.primary-button {
-  color: white;
-  background-position: right;
-  background-repeat: no-repeat;
+button[data-icon=download]::after {
+  content: "";
+  width: 20px;
+  height: 20px;
   background-image: url(/ressources/icons/download.svg);
-  background-color: #000;
 }
 
 header {
