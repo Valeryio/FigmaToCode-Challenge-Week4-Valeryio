@@ -13,6 +13,7 @@ button[data-icon="download"]
     gap: 0.8rem;
     @extend %btn;
     @include flex-mixin();
+    border-radius: 0.5rem;
 }
 
 button[data-icon="download"]::after
