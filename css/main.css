@@ -51,6 +51,37 @@ a {
   font-weight: var(--fw-semibold);
 }
 
+.fs-bold-title, .fs-regular-title {
+  font-size: 3rem;
+  text-align: center;
+  line-height: 5rem;
+  text-align: left;
+  letter-spacing: -0.02em;
+}
+
+.fs-regular-title {
+  font-weight: 400;
+}
+
+.fs-bold-title {
+  font-weight: 800;
+}
+
+.fs-bold-bordered-title {
+  background-color: black;
+  background-clip: text;
+  letter-spacing: -1px;
+  font-weight: 800;
+  -webkit-text-stroke: 6px transparent;
+  color: white;
+}
+
+.fs-gray-paragraph {
+  font-size: 20px;
+  font-weight: 400;
+  color: #71717a;
+}
+
 button[data-icon=download] {
   border: none;
   color: white;
@@ -75,6 +106,14 @@ button[data-icon=download]::after {
   background-image: url(/ressources/icons/download.svg);
 }
 
+.social-icons-group {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-flow: row wrap;
+}
+
 header {
   --padding-spacing: 6rem;
   display: flex;
@@ -82,14 +121,15 @@ header {
   justify-content: space-between;
   flex-flow: row wrap;
   border: 1px solid black;
-  width: 100%;
+  max-width: 1840px;
+  margin: auto;
   padding: 1.5rem var(--padding-spacing);
 }
 
 .navbar-links ul {
   gap: 2rem;
   list-style: none;
-  font-size: 16px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -98,16 +138,41 @@ header {
 
 .hero-header {
   margin: auto;
-  padding: 80px 0;
-  max-width: 1280px;
+  padding: 40px 0;
+  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
 }
+.hero-header picture {
+  margin-left: -156px;
+  border: 1px solid black;
+}
+.hero-header .hero-header-content {
+  gap: 4rem;
+  position: relative;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-flow: wrap column;
+}
 
-.hero-header-content p {
-  max-width: 480px;
+.hero-header-content * {
+  border: 1px solid black;
+  max-width: 600px;
+}
+.hero-header-content .social-icons-group {
+  bottom: -8rem;
+  position: absolute;
+}
+
+.hero-header-text {
+  gap: 1rem;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  flex-flow: wrap column;
 }
 
 /*# sourceMappingURL=main.css.map */

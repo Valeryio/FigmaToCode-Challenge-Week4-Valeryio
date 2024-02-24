@@ -5,16 +5,46 @@
 .hero-header
 {
     margin: auto;
-    padding: 80px 0;
-    max-width: 1280px;
+    padding: 40px 0;
+    @include border;
     @include flex-mixin();
+
+
+    picture
+    {
+        margin-left: -156px;
+        @include border;
+    }
+
+    .hero-header-content
+    {
+        gap: 4rem;
+        position: relative;
+        @include flex-mixin(space-between, start, wrap, column);
+    }
+
+
 }
 
 .hero-header-content
 {
 
-    p
+    *
     {
-        max-width: 480px;
+        @include border;
+        max-width: 600px; // To preserve overflowing the wrong way
     }
+
+    .social-icons-group
+    {
+        bottom: -8rem;
+        position: absolute;
+    }
+}
+
+
+.hero-header-text
+{
+    gap: 1rem;
+    @include flex-mixin(start, start, wrap, column);
 }

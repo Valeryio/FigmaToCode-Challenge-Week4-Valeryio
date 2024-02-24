@@ -7,7 +7,8 @@ header
     @include flex-mixin(space-between);
     @include border;
 
-    width: 100%;
+    max-width: 1840px;
+    margin: auto;
     padding: 1.5rem var(--padding-spacing);
 
 }
@@ -16,6 +17,6 @@ header
 {
     gap: 2rem;
     list-style: none;
-    font-size: 16px;
+    font-size: 20px;
     @include flex-mixin(space-between);
 }

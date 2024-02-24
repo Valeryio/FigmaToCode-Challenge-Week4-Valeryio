@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
 @import '../abstracts/mixins';
+@import '../abstracts/variables';
 
 
 :root
@@ -18,9 +19,57 @@ body
 }
 
 
-a {
+a 
+{
     color: $primary-black;
     text-decoration: none;
     font-weight: var(--fw-semibold);
-    // font-weight: var(--fw-regular);
-  }
+}
+
+%fs-title
+{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 5rem;
+    text-align: left;
+    letter-spacing: -0.02em;
+}
+
+.fs-regular-title
+{
+    @extend %fs-title;
+
+    font-weight: 400;
+}
+
+.fs-bold-title
+{
+    @extend %fs-title;
+
+    font-weight: 800;
+}
+
+
+/// The background-clip property is used to fit the black background
+/// to the text
+
+/// webkit-stroke is used to set a border to the text, and the color
+/// is transparent to have the black background as color of border
+
+.fs-bold-bordered-title
+{   
+    background-color: black;
+    background-clip: text;
+    letter-spacing: -1px;
+    font-weight: 800;
+    -webkit-text-stroke: 6px transparent;  
+    color: white;
+}
+
+.fs-gray-paragraph
+{
+    font-size: 20px;
+    font-weight: 400;
+
+    color: $zinc-500;
+}

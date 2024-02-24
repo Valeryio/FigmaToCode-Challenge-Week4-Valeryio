@@ -1,0 +1,10 @@
+@import '../abstracts/mixins';
+@import '../abstracts/variables';
+
+
+
+.social-icons-group
+{
+    gap: 2rem;
+    @include flex-mixin(start);
+}
