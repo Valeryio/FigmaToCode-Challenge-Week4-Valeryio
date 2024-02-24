@@ -5,7 +5,7 @@ header
     --padding-spacing: 6rem;
 
     @include flex-mixin(space-between);
-    @include border;
+    // @include border;
 
     margin: auto;
     max-width: 1280px;
@@ -62,9 +62,14 @@ header
         }
 
         /* Hidding the navbar and the button from the header*/
-        .navbar-links-container, button[data-icon="download"]
+        .navbar-links-container
         {
             display: none;
+        }
+
+        button[data-icon="download"]
+        {
+            opacity: 0;
         }
     }
  
@@ -85,7 +90,7 @@ header
     .navlink
     {
         @include flex-mixin();
-        @include border(0.02px, red);
+        @include border(0.01px, $zinc-800);
 
         width: 100%;
         height: 4rem;

@@ -10,5 +10,6 @@ console.log(resumeDownloadButton);
 
 menuIcon.addEventListener("click", (e) =>
 {
-    navbarLinks.classList.toggle("appear");
+    navbarLinks.classList.toggle("display-appear");
+    resumeDownloadButton.classList.toggle("opacity-appear");
 })

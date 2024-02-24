@@ -108,8 +108,12 @@ button[data-icon=download]::after {
 }
 
 /*Useful class-based components abstracts*/
-.appear {
-  display: block;
+.display-appear {
+  display: block !important;
+}
+
+.opacity-appear {
+  opacity: 1 !important;
 }
 
 /*Useful UI components*/
@@ -127,7 +131,6 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-flow: row wrap;
-  border: 1px solid black;
   margin: auto;
   max-width: 1280px;
   padding: 1rem 0;
@@ -169,8 +172,11 @@ header .amburger-menu {
     justify-content: space-between;
     flex-flow: row wrap;
   }
-  header .navbar-links-container, header button[data-icon=download] {
+  header .navbar-links-container {
     display: none;
+  }
+  header button[data-icon=download] {
+    opacity: 0;
   }
   /* Creating a new disposition for the navbar menu */
   .navbar-links-container {
@@ -185,7 +191,7 @@ header .amburger-menu {
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-    border: 0.02px solid red;
+    border: 0.01px solid #27272a;
     width: 100%;
     height: 4rem;
     background-color: #f4f4f5;

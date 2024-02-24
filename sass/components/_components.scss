@@ -4,9 +4,14 @@
 
 /*Useful class-based components abstracts*/
 
-.appear
+.display-appear
 {
-    display: block;
+    display: block!important;
+}
+
+.opacity-appear
+{
+    opacity: 1!important;
 }
 
 
