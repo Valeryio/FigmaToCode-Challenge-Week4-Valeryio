@@ -21,11 +21,16 @@ header
     @include flex-mixin(space-between);
 }
 
+
+
+
+
 @media screen  and (max-width: 1140px) 
 {
 
     header
     {
+        gap: 16px;
         flex-direction: column;
 
         *
@@ -37,6 +42,30 @@ header
 
     .navbar-links
     {
-        display: none;
+        // display: none;
+    }
+}
+
+
+@media screen  and (max-width: 400px) 
+{
+    .navbar-links
+    {
+        width: 100%;
+        display: block;
+
+        ul
+        {
+            width: 100%;
+            display: block;
+            flex-direction: column;
+        }
+
+    }
+
+    .navlink
+    {
+        display: block;
+        border: 1px solid;
     }
 }

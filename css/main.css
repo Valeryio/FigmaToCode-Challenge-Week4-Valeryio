@@ -139,13 +139,26 @@ header {
 
 @media screen and (max-width: 1140px) {
   header {
+    gap: 16px;
     flex-direction: column;
   }
   header * {
     border: 1px solid black;
   }
+}
+@media screen and (max-width: 400px) {
   .navbar-links {
-    display: none;
+    width: 100%;
+    display: block;
+  }
+  .navbar-links ul {
+    width: 100%;
+    display: block;
+    flex-direction: column;
+  }
+  .navlink {
+    display: block;
+    border: 1px solid;
   }
 }
 .hero-header {
