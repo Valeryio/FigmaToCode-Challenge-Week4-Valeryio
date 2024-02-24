@@ -107,6 +107,12 @@ button[data-icon=download]::after {
   background-image: url(/ressources/icons/download.svg);
 }
 
+/*Useful class-based components abstracts*/
+.appear {
+  display: block;
+}
+
+/*Useful UI components*/
 .social-icons-group {
   gap: 2rem;
   display: flex;
@@ -122,12 +128,15 @@ header {
   justify-content: space-between;
   flex-flow: row wrap;
   border: 1px solid black;
-  max-width: 1840px;
   margin: auto;
-  padding: 1.5rem var(--padding-spacing);
+  max-width: 1280px;
+  padding: 1rem 0;
+}
+header .amburger-menu {
+  display: none;
 }
 
-.navbar-links ul {
+.navbar-links-list-parent {
   gap: 2rem;
   list-style: none;
   font-size: 20px;
@@ -137,28 +146,49 @@ header {
   flex-flow: row wrap;
 }
 
+/*Responsive styles for the header*/
 @media screen and (max-width: 1140px) {
   header {
     gap: 16px;
     flex-direction: column;
   }
-  header * {
-    border: 1px solid black;
-  }
 }
-@media screen and (max-width: 400px) {
-  .navbar-links {
-    width: 100%;
+@media screen and (max-width: 500px) {
+  /*Reseting all the default parameters for the mobile version*/
+  header {
+    /* Displaying the amburger-menu*/
+    /* Hidding the navbar and the button from the header*/
+  }
+  header .amburger-menu {
     display: block;
   }
-  .navbar-links ul {
+  header .logo-and-menu {
+    gap: calc(100vw - 14rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+  header .navbar-links-container, header button[data-icon=download] {
+    display: none;
+  }
+  /* Creating a new disposition for the navbar menu */
+  .navbar-links-container {
     width: 100%;
+  }
+  .navbar-links-container .navbar-links-list-parent {
     display: block;
-    flex-direction: column;
+    padding: 0;
   }
   .navlink {
-    display: block;
-    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    border: 0.02px solid red;
+    width: 100%;
+    height: 4rem;
+    background-color: #f4f4f5;
   }
 }
 .hero-header {

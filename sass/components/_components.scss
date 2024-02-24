@@ -2,7 +2,16 @@
 @import '../abstracts/variables';
 
 
+/*Useful class-based components abstracts*/
 
+.appear
+{
+    display: block;
+}
+
+
+
+/*Useful UI components*/
 .social-icons-group
 {
     gap: 2rem;
