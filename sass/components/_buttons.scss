@@ -13,6 +13,8 @@ button[data-icon="download"]
     gap: 0.8rem;
     @extend %btn;
     @include flex-mixin();
+    min-width: 10rem;
+    max-height: 4rem;
     border-radius: 0.5rem;
 }
 

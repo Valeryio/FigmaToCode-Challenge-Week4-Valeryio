@@ -9,8 +9,8 @@
 
     --fw-bold: 700;
     --fw-regular: 400;
-    --fw-extra-bold: 800;
     --fw-semibold: 600;
+    --fw-extra-bold: 800;
 }
 
 body
@@ -32,21 +32,21 @@ a
     text-align: center;
     line-height: 5rem;
     text-align: left;
-    letter-spacing: -0.02em;
+    // letter-spacing: -0.02em;
 }
 
 .fs-regular-title
 {
     @extend %fs-title;
 
-    font-weight: 400;
+    font-weight: var(--fw-regular);
 }
 
 .fs-bold-title
 {
     @extend %fs-title;
 
-    font-weight: 800;
+    font-weight: var(--fw-extra-bold);
 }
 
 

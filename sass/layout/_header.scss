@@ -20,3 +20,23 @@ header
     font-size: 20px;
     @include flex-mixin(space-between);
 }
+
+@media screen  and (max-width: 1140px) 
+{
+
+    header
+    {
+        flex-direction: column;
+
+        *
+        {
+            @include border;
+        }
+    }
+
+
+    .navbar-links
+    {
+        display: none;
+    }
+}

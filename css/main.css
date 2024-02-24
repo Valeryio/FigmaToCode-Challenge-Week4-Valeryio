@@ -37,8 +37,8 @@ p, h1, h2, h3, h4, h5, h6 {
   --ff-base: "Sora", sans-serif;
   --fw-bold: 700;
   --fw-regular: 400;
-  --fw-extra-bold: 800;
   --fw-semibold: 600;
+  --fw-extra-bold: 800;
 }
 
 body {
@@ -56,15 +56,14 @@ a {
   text-align: center;
   line-height: 5rem;
   text-align: left;
-  letter-spacing: -0.02em;
 }
 
 .fs-regular-title {
-  font-weight: 400;
+  font-weight: var(--fw-regular);
 }
 
 .fs-bold-title {
-  font-weight: 800;
+  font-weight: var(--fw-extra-bold);
 }
 
 .fs-bold-bordered-title {
@@ -96,6 +95,8 @@ button[data-icon=download] {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  min-width: 10rem;
+  max-height: 4rem;
   border-radius: 0.5rem;
 }
 
@@ -136,10 +137,22 @@ header {
   flex-flow: row wrap;
 }
 
+@media screen and (max-width: 1140px) {
+  header {
+    flex-direction: column;
+  }
+  header * {
+    border: 1px solid black;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
 .hero-header {
   margin: auto;
   padding: 40px 0;
   border: 1px solid black;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
