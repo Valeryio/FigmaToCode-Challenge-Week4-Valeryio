@@ -147,7 +147,7 @@ button[data-icon=download]::after {
 
 /*Useful UI components*/
 .social-icons-group {
-  gap: 2rem;
+  gap: calc(1rem + 3vw);
   display: flex;
   align-items: center;
   justify-content: start;
