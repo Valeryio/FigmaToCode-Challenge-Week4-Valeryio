@@ -462,6 +462,73 @@ header .amburger-menu {
 }
 
 /*Testimonials section*/
+.testimonials {
+  gap: 2rem;
+  margin: 4rem auto;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+.testimonials .testimonials-container {
+  gap: 2rem;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.testimonial {
+  gap: 0.5rem;
+  padding: 2rem auto;
+  height: 24.5rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+.testimonial hr {
+  width: 6rem;
+  height: 0.1rem;
+}
+.testimonial .testimonial-description {
+  padding: 1rem;
+  max-width: 292px;
+  text-align: center;
+}
+.testimonial .testimonial-name {
+  color: #27272a;
+  font-weight: var(--fw-semibold);
+}
+.testimonial .testimonial-job {
+  color: #71717a;
+}
+
+.specific-testimonial {
+  color: #fff;
+  background-color: #000;
+}
+.specific-testimonial hr {
+  background-color: #fff;
+}
+.specific-testimonial .testimonial-name {
+  color: #fff;
+}
+
+.profile-img {
+  position: relative;
+  border: 1px solid black;
+}
+.profile-img .hyphen {
+  right: 0;
+  bottom: -0.5rem;
+  position: absolute;
+}
+
 @media screen and (max-width: 500px) {
   .hero-header {
     margin: 0 1rem;
