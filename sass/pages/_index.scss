@@ -479,4 +479,26 @@
         }
     }
 
+    /* 
+        Adapting the responsive version of the contact section
+    */
+
+    .contact-content
+    {
+        *
+        {
+            text-align: center;
+        }
+    }
+
+    .contact-infos
+    {
+        *
+        {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: var(--fw-semibold);
+        }
+    }
+
 }
