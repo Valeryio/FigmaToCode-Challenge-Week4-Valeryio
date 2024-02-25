@@ -20,6 +20,7 @@
     padding: 2rem auto;
     height: 24.5rem;
     border-radius: 1rem;
+    box-shadow: -4px 4px 16px rgba(0, 0, 0, 0.2);
     @include flex-mixin(center, center, wrap, column);
 
     hr
