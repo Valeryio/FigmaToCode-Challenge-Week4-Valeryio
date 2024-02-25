@@ -3,7 +3,6 @@
 {
     gap: 2rem;
     margin: 8rem auto 2rem;
-    @include border(2px, green);
     @include flex-mixin(center, center, wrap, column);  
 
     .tech-skills-container
@@ -13,7 +12,6 @@
         gap: 4rem;
         max-width: 1216px;
         @include flex-mixin();
-        @include border(2px, green);
     }
 
 }

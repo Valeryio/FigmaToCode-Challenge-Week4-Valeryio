@@ -1,9 +1,9 @@
 .contact-form
 {
     gap: 1rem;
-    max-width: 35rem;
-    @include  border;
     padding: 1rem;
+    max-width: 35rem;
+    margin: 6rem 2rem;
     @include flex-mixin(center, left, wrap, column);
 
     input, textarea

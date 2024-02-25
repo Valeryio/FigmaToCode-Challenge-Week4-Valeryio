@@ -255,7 +255,6 @@ footer .footer-content {
   color: white;
   max-width: 1280px;
   margin: 2rem auto 0;
-  border: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -263,7 +262,6 @@ footer .footer-content {
 }
 
 .footer-content .additionnal-informations {
-  border: 2px solid white;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -273,7 +271,6 @@ footer .footer-content {
 @media screen and (max-width: 500px) {
   footer .footer-content {
     gap: 32px;
-    border: 2px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -283,7 +280,6 @@ footer .footer-content {
 .skills {
   gap: 2rem;
   margin: 8rem auto 2rem;
-  border: 2px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,7 +293,6 @@ footer .footer-content {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  border: 2px solid green;
 }
 
 .tech-skills-container .tech-skill, .tech-skills-container .tech-skill-black {
@@ -333,9 +328,9 @@ footer .footer-content {
 }
 .contact-form {
   gap: 1rem;
-  max-width: 35rem;
-  border: 1px solid black;
   padding: 1rem;
+  max-width: 35rem;
+  margin: 6rem 2rem;
   display: flex;
   align-items: left;
   justify-content: center;
@@ -373,7 +368,6 @@ footer .footer-content {
 .hero-header {
   margin: 1rem auto 6rem;
   padding: 40px 0;
-  border: 2px solid red;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -382,7 +376,6 @@ footer .footer-content {
 }
 .hero-header .hero-header-img {
   margin-left: -156px;
-  border: 1px solid black;
 }
 .hero-header .hero-header-content {
   gap: 4rem;
@@ -394,7 +387,6 @@ footer .footer-content {
 }
 
 .hero-header-content * {
-  border: 1px solid black;
   max-width: 600px;
 }
 .hero-header-content .social-icons-group {
@@ -416,7 +408,6 @@ footer .footer-content {
   padding: 4rem;
   margin: 4rem auto;
   color: #f4f4f5;
-  border: 2px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -439,7 +430,7 @@ footer .footer-content {
   padding: 24px 30px;
   max-width: 1168px;
   border-radius: 8px;
-  border: 1px solid #fff;
+  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -461,12 +452,8 @@ footer .footer-content {
   font-weight: 800;
 }
 
-.experience-subtitle-informations {
-  border: 2px solid green;
-}
 .experience-subtitle-informations .experience-subtitle {
   gap: 2rem;
-  border: 2px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -474,7 +461,6 @@ footer .footer-content {
 }
 
 .experience-subtitle h3 {
-  border: 1px solid black;
   color: white;
 }
 
@@ -485,13 +471,11 @@ footer .footer-content {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  border: 2px solid green;
   margin: 2rem auto;
   max-width: 1280px;
 }
 .about h2 {
   padding: 0;
-  border: 2px solid green;
 }
 .about .about-content {
   gap: 2rem;
@@ -505,7 +489,6 @@ footer .footer-content {
   gap: 2rem;
   padding: 2rem;
   max-width: 692px;
-  border: 2px solid violet;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -532,6 +515,7 @@ footer .footer-content {
   justify-content: center;
   flex-flow: wrap column;
 }
+
 .project-container .project {
   gap: 2rem;
   padding: 1rem;
@@ -553,7 +537,6 @@ footer .footer-content {
 .testimonials {
   gap: 2rem;
   margin: 4rem auto;
-  border: 2px solid green;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -561,7 +544,6 @@ footer .footer-content {
 }
 .testimonials .testimonials-container {
   gap: 2rem;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -573,7 +555,6 @@ footer .footer-content {
   padding: 2rem auto;
   height: 24.5rem;
   border-radius: 1rem;
-  border: 1px solid black;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -609,7 +590,6 @@ footer .footer-content {
 
 .profile-img {
   position: relative;
-  border: 1px solid black;
 }
 .profile-img .hyphen {
   right: 0;
@@ -625,7 +605,6 @@ footer .footer-content {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  border: 2px solid green;
 }
 .contact .contact-content {
   gap: 2rem;
@@ -674,7 +653,6 @@ footer .footer-content {
   .experience-subtitle-informations {
     align-items: center;
     justify-content: center;
-    border: 2px solid violet;
   }
   .experience-subtitle-informations .experience-subtitle {
     gap: 0.02rem;

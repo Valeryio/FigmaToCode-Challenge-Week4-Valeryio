@@ -6,7 +6,6 @@
 {
     margin: 1rem auto 6rem;
     padding: 40px 0;
-    @include border(2px, red);
 
     font-size: 16px;
     @include flex-mixin();
@@ -15,7 +14,6 @@
     .hero-header-img
     {
         margin-left: -156px;
-        @include border;
     }
 
     .hero-header-content
@@ -31,7 +29,6 @@
 {
     *
     {
-        @include border;
         max-width: 600px; // To preserve overflowing the wrong way
     }
 
@@ -60,7 +57,6 @@
     padding: 4rem;
     margin: 4rem auto;
     color: $zinc-100;
-    @include border(2px, green);
     @include flex-mixin(center, center, wrap, column);
     background-color: $primary-black;
     
@@ -86,7 +82,7 @@
             padding: 24px 30px;
             max-width: 1168px;
             border-radius: 8px;
-            @include border(1px, $primary-white);
+            border: 1px solid white;
 
             @include flex-mixin(center, center, wrap, column);
         }
@@ -122,18 +118,14 @@
     .experience-subtitle
     {
         gap: 2rem;
-        @include border(2px);
         @include flex-mixin();
     }
-
-    @include border(2px, green);
 }
 
 .experience-subtitle
 {
     h3
     {
-        @include border;
         color: white;
     }
 }
@@ -146,7 +138,6 @@
 {
     gap: 2rem;
     @include flex-mixin();
-    @include border(2px, green);
 
     margin: 2rem auto;
     max-width: 1280px;
@@ -154,7 +145,6 @@
     h2
     {
         padding: 0;
-        @include border(2px, green);
     }
 
     .about-content
@@ -169,7 +159,6 @@
     gap: 2rem;
     padding: 2rem;
     max-width: 692px;
-    @include border(2px, violet);
     @include flex-mixin(center, center, wrap, column);
 
     p
@@ -197,10 +186,6 @@
         max-width: 1280px;
         @include flex-mixin(center, center, wrap, column);
 
-        *
-        {
-            // @include border(2px, white);
-        }
     }
 }
 
@@ -238,13 +223,11 @@
 {
     gap: 2rem;
     margin: 4rem auto;
-    @include border(2px, green);
     @include flex-mixin(center, center, wrap, column);
 
     .testimonials-container
     {
         gap: 2rem;
-        @include border;
         @include flex-mixin();
     }
 }
@@ -255,7 +238,6 @@
     padding: 2rem auto;
     height: 24.5rem;
     border-radius: 1rem;
-    @include border;
     @include flex-mixin(center, center, wrap, column);
 
     hr
@@ -303,7 +285,6 @@
 .profile-img
 {
     position: relative;
-    @include border;
 
     .hyphen
     {
@@ -322,7 +303,6 @@
     gap: 2rem;
     margin: 2rem auto;
     @include flex-mixin();
-    @include border(2px, green);
 
     .contact-content
     {
@@ -410,7 +390,6 @@
     {  
         align-items: center;
         justify-content: center;
-        @include border(2px, violet);
 
         .experience-subtitle
         {

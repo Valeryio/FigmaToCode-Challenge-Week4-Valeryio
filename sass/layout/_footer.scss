@@ -10,7 +10,6 @@ footer
         color: white;
         max-width: 1280px;
         margin: 2rem auto 0;
-        @include border(2px, white);
         @include flex-mixin(space-between, center);
     } 
 }
@@ -19,7 +18,6 @@ footer
 {
     .additionnal-informations
     {
-        @include border(2px, white);
         @include flex-mixin(center, end, wrap, column);
     
     }
@@ -35,7 +33,6 @@ footer
         .footer-content
         {
             gap: 32px;
-            @include border(2px, red);
             @include flex-mixin(center, center, wrap, column);
         }
     }
