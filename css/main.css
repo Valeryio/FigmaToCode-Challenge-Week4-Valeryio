@@ -110,7 +110,7 @@ a {
     line-height: normal;
   }
 }
-button[data-icon=download] {
+.primary-button, button[data-icon=download] {
   border: none;
   color: white;
   cursor: pointer;
@@ -136,6 +136,18 @@ button[data-icon=download]::after {
   background-image: url(/ressources/icons/download.svg);
 }
 
+.primary-button {
+  gap: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  min-width: 10rem;
+  max-height: 4rem;
+  border-radius: 0.5rem;
+  background-color: #000;
+}
+
 /*Useful class-based components abstracts*/
 .display-appear {
   display: block !important;
@@ -147,7 +159,7 @@ button[data-icon=download]::after {
 
 /*Useful UI components*/
 .social-icons-group {
-  gap: calc(1rem + 3vw);
+  gap: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: start;
@@ -281,6 +293,49 @@ header .amburger-menu {
     gap: 1rem;
   }
 }
+.contact-form {
+  gap: 1rem;
+  max-width: 512px;
+  border: 1px solid black;
+  padding: 1rem;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-flow: wrap column;
+  /*.button-section button
+  {
+      @extend %btn;
+
+      gap: 0.8rem;
+      @extend %btn;
+      @include flex-mixin();
+      min-width: 10rem;
+      max-height: 4rem;
+      border-radius: 0.5rem;
+  }*/
+}
+.contact-form input, .contact-form textarea {
+  padding: 1rem 1.5rem;
+  max-width: 32rem;
+  min-width: 28rem;
+  display: block;
+  outline: none;
+  border-radius: 4px;
+  border: 1.5px solid #000;
+}
+.contact-form input {
+  height: 3.5rem;
+}
+.contact-form textarea {
+  resize: none;
+}
+.contact-form .button-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
 /*Hero header section*/
 .hero-header {
   margin: 1rem auto 6rem;
@@ -527,6 +582,17 @@ header .amburger-menu {
   right: 0;
   bottom: -0.5rem;
   position: absolute;
+}
+
+/*Contact section*/
+.contact {
+  gap: 2rem;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  border: 2px solid green;
 }
 
 @media screen and (max-width: 500px) {

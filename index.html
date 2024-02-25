@@ -362,8 +362,23 @@
 
 
         <section class="contact">
-            <form action="action.js" method="post">
+            <form action="action.js" class="contact-form" method="post">
+                <input type="text" required placeholder="Your name">
+                <input type="email" required placeholder="Email">
+                <input type="text" required placeholder="Your website (If exists)">
 
+                <textarea name="" id="" cols="30" rows="10" required placeholder="How can I help?*"></textarea>
+
+                <div class="button-section">
+                    <button class="primary-button" data-role="cta" >Get in touch</button>
+                    
+                    <div class="hero-header-contact social-icons-group">
+                        <img src="/ressources/icons/brands/facebook.svg" alt="A black facebook Icon">
+                        <img src="/ressources/icons/brands/reddit.svg" alt="A reddit Icon">
+                        <img src="/ressources/icons/brands/twitter.svg" alt="A twitter icon">
+                        <img src="/ressources/icons/brands/discord.svg" alt="A discord Icon">
+                    </div>
+                </div>
             </form>
 
             <div class="contact-content">

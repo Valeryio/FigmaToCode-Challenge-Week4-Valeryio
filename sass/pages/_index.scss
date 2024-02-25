@@ -314,8 +314,16 @@
 }
 
 
+/*Contact section*/
 
 
+.contact
+{
+    gap: 2rem;
+    margin: 2rem auto;
+    @include flex-mixin();
+    @include border(2px, green);
+}
 
 
 

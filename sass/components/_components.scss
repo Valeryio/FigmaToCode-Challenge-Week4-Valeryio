@@ -19,7 +19,8 @@
 /*Useful UI components*/
 .social-icons-group
 {
-    gap: calc(1rem + 3vw);
+    gap: 1.5rem;
+    // gap: calc(1rem + 3vw);
     @include flex-mixin(start);
 }
 
