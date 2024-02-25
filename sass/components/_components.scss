@@ -22,3 +22,11 @@
     gap: 2rem;
     @include flex-mixin(start);
 }
+
+
+.tech-skill
+{
+    @include border;
+
+    
+}

@@ -51,7 +51,7 @@ a {
   font-weight: var(--fw-semibold);
 }
 
-.fs-bold-title, .fs-regular-title {
+.fs-bold-title, .fs-regular-subtitle, .fs-regular-title {
   font-size: 3rem;
   text-align: center;
   line-height: 5rem;
@@ -59,6 +59,11 @@ a {
 }
 
 .fs-regular-title {
+  font-weight: var(--fw-regular);
+}
+
+.fs-regular-subtitle {
+  font-size: 2rem;
   font-weight: var(--fw-regular);
 }
 
@@ -81,6 +86,20 @@ a {
   color: #71717a;
 }
 
+.fs-black-paragraph {
+  font-size: 20px;
+  font-weight: var(--fw-semibold);
+  color: #000;
+}
+
+@media screen and (max-width: 500px) {
+  .fs-regular-title, .fs-regular-subtitle, .fs-bold-title {
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 5rem;
+    text-align: left;
+  }
+}
 button[data-icon=download] {
   border: none;
   color: white;
@@ -123,6 +142,10 @@ button[data-icon=download]::after {
   align-items: center;
   justify-content: start;
   flex-flow: row wrap;
+}
+
+.tech-skill {
+  border: 1px solid black;
 }
 
 header {
@@ -197,10 +220,32 @@ header .amburger-menu {
     background-color: #f4f4f5;
   }
 }
+.skills {
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+.skills .tech-skills-container {
+  gap: 32px;
+  max-width: 1216px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  border: 2px solid green;
+}
+
+.tech-skills-container .tech-skill {
+  width: 1rem;
+  height: 1rem;
+}
+
 .hero-header {
   margin: auto;
   padding: 40px 0;
-  border: 1px solid black;
+  border: 2px solid red;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -235,6 +280,25 @@ header .amburger-menu {
   align-items: start;
   justify-content: start;
   flex-flow: wrap column;
+}
+
+@media screen and (max-width: 500px) {
+  .hero-header {
+    margin: 0 1rem;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .hero-header picture {
+    margin-left: 0;
+    padding: 1rem;
+  }
+  picture {
+    margin-left: 8rem;
+    padding: 1rem;
+  }
+  .hero-header-text * {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

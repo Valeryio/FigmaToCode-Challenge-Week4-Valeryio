@@ -1,0 +1,26 @@
+
+.skills
+{
+    @include border(2px, green);
+    @include flex-mixin(center, center, wrap, column);  
+
+    .tech-skills-container
+    {
+        $box-general-size: 11.5rem;
+
+        gap: 32px;
+        max-width: 1216px;
+        @include flex-mixin();
+        @include border(2px, green);
+    }
+
+}
+
+.tech-skills-container
+{
+    .tech-skill
+    {
+        width: 1rem;
+        height: 1rem;
+    }
+}

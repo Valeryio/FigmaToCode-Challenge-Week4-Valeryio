@@ -42,6 +42,15 @@ a
     font-weight: var(--fw-regular);
 }
 
+.fs-regular-subtitle
+{
+    @extend %fs-title;
+    font-size: 2rem;
+
+    font-weight: var(--fw-regular);
+}
+
+
 .fs-bold-title
 {
     @extend %fs-title;
@@ -72,4 +81,29 @@ a
     font-weight: 400;
 
     color: $zinc-500;
+}
+
+.fs-black-paragraph
+{
+    font-size: 20px;
+    font-weight: var(--fw-semibold);
+
+    color: $primary-black;
+}
+
+
+
+
+
+@media screen  and (max-width: 500px) 
+{
+    %fs-title
+    {
+        font-size: 2.5rem;
+        text-align: center;
+        line-height: 5rem;
+        text-align: left;
+        // letter-spacing: -0.02em;
+    }
+    
 }

@@ -6,8 +6,8 @@
 {
     margin: auto;
     padding: 40px 0;
-    @include border;
-    
+    @include border(2px, red);
+
     font-size: 16px;
     @include flex-mixin();
 
@@ -49,4 +49,44 @@
 {
     gap: 1rem;
     @include flex-mixin(start, start, wrap, column);
+}
+
+
+
+
+
+
+@media screen  and (max-width: 500px) 
+{
+
+    .hero-header
+    {
+        margin: 0 1rem;
+        align-items: center;
+        flex-direction: column-reverse;
+
+
+        picture
+        {
+            margin-left: 0;
+            padding: 1rem;
+        }
+    }
+
+    picture
+    {
+        margin-left: 8rem;
+        padding: 1rem;
+    }
+
+    .hero-header-text
+    {
+
+        *
+        {
+            text-align: center;
+        }
+    }
+
+
 }
