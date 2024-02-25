@@ -12,7 +12,7 @@
     @include flex-mixin();
 
 
-    picture
+    .hero-header-img
     {
         margin-left: -156px;
         @include border;
@@ -140,9 +140,43 @@
 
 
 
+/*About section*/
 
+.about
+{
+    gap: 2rem;
+    @include flex-mixin();
+    @include border(2px, green);
 
+    margin: 2rem auto;
+    max-width: 1280px;
 
+    h3
+    {
+        padding: 0;
+        @include border(2px, green);
+    }
+
+    .about-content
+    {
+        gap: 2rem;
+        @include flex-mixin(center, left, wrap, column);
+    }
+}
+
+.p-container
+{
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 692px;
+    @include border(2px, violet);
+    @include flex-mixin(center, center, wrap, column);
+
+    p
+    {
+        font-size: 18px;
+    }
+}
 
 
 
@@ -164,14 +198,15 @@
         flex-direction: column-reverse;
 
 
-        picture
+        
+        .hero-header-img
         {
             margin-left: 0;
             padding: 1rem;
         }
     }
 
-    picture
+    .hero-header-img
     {
         margin-left: 8rem;
         padding: 1rem;
@@ -234,6 +269,29 @@
     .experience-subtitle h3, .experience-date
     {
         text-align: center;
+    }
+
+
+
+    /*
+        Adapting the responsive for the about section
+    */
+
+        
+    .about
+    {
+        gap: 0rem;
+        @include flex-mixin(center, center, wrap, column);
+
+        h3
+        {
+            text-align: center;
+        }
+
+        .about-img
+        {
+            padding: 2rem;
+        }
     }
 
 }
