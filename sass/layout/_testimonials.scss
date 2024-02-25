@@ -1,0 +1,77 @@
+@import '../abstracts/mixins';
+
+
+.testimonials
+{
+    gap: 2rem;
+    margin: 4rem auto;
+    @include flex-mixin(center, center, wrap, column);
+
+    .testimonials-container
+    {
+        gap: 2rem;
+        @include flex-mixin();
+    }
+}
+
+.testimonial
+{
+    gap: 0.5rem;
+    padding: 2rem auto;
+    height: 24.5rem;
+    border-radius: 1rem;
+    @include flex-mixin(center, center, wrap, column);
+
+    hr
+    {
+        width: 6rem;
+        height: 0.1rem;
+    }
+
+    .testimonial-description
+    {
+        padding: 1rem;
+        max-width: 292px;
+        text-align: center;
+    }
+
+    .testimonial-name
+    {
+        color: $zinc-800;
+        font-weight: var(--fw-semibold);
+    }
+
+    .testimonial-job
+    {
+        color: $zinc-500;
+    }
+}
+
+.specific-testimonial
+{
+    color: $primary-white;
+    background-color: $primary-black;
+
+    hr
+    {
+        background-color: $primary-white;
+    }
+
+    
+    .testimonial-name
+    {
+        color: $primary-white;
+    }
+}
+
+.profile-img
+{
+    position: relative;
+
+    .hyphen
+    {
+        right: 0;
+        bottom: -0.5rem;
+        position: absolute;
+    }
+}
