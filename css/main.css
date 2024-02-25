@@ -659,9 +659,9 @@ footer .footer-content {
     gap: 0.02rem;
   }
   .experience-subtitle-informations .experience-date {
+    width: 100%;
     font-size: 16px;
     text-align: center;
-    border: 2px solid white;
   }
   .experience-subtitle h3, .experience-date {
     text-align: center;
