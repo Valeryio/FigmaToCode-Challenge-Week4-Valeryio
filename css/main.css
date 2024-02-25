@@ -222,6 +222,7 @@ header .amburger-menu {
 }
 .skills {
   gap: 2rem;
+  margin: 8rem auto 2rem;
   border: 2px solid green;
   display: flex;
   align-items: center;
@@ -258,6 +259,18 @@ header .amburger-menu {
   color: white;
 }
 
+@media screen and (max-width: 500px) {
+  .skills {
+    /*
+        Updating the variable to reduce the skill's box
+        size with the length of the screen
+    */
+  }
+  .skills .tech-skills-container {
+    --box-general-size: 10rem;
+    gap: 1rem;
+  }
+}
 .hero-header {
   margin: 1rem auto 6rem;
   padding: 40px 0;

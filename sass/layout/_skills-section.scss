@@ -2,6 +2,7 @@
 .skills
 {
     gap: 2rem;
+    margin: 8rem auto 2rem;
     @include border(2px, green);
     @include flex-mixin(center, center, wrap, column);  
 
@@ -41,4 +42,25 @@
     {
         color: white;
     }
+}
+
+
+@media screen  and (max-width: 500px) 
+{
+
+    .skills
+    {
+        /*
+            Updating the variable to reduce the skill's box
+            size with the length of the screen
+        */
+
+        .tech-skills-container
+        {
+            --box-general-size: 10rem;
+
+            gap: 1rem;
+        }
+    }
+
 }
