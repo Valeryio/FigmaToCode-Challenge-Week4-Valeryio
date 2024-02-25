@@ -246,6 +246,30 @@ header .amburger-menu {
     background-color: #f4f4f5;
   }
 }
+footer {
+  min-height: 5rem;
+  background-color: #000;
+}
+footer .footer-content {
+  padding: 2rem;
+  color: white;
+  max-width: 1280px;
+  margin: 2rem auto 0;
+  border: 2px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.footer-content .additionnal-informations {
+  border: 2px solid white;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+
 .skills {
   gap: 2rem;
   margin: 8rem auto 2rem;
