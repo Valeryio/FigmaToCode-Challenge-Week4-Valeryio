@@ -461,6 +461,7 @@ header .amburger-menu {
   margin-bottom: 1rem;
 }
 
+/*Testimonials section*/
 @media screen and (max-width: 500px) {
   .hero-header {
     margin: 0 1rem;
