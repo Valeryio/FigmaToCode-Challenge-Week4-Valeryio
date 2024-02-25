@@ -323,7 +323,28 @@
     margin: 2rem auto;
     @include flex-mixin();
     @include border(2px, green);
+
+    .contact-content
+    {
+        gap: 2rem;
+        max-width: 38rem;
+        padding: 2rem 4rem;
+
+        @include flex-mixin(center, left, wrap, column);
+    }
+
 }
+
+.contact-infos
+{
+    *
+    {
+        font-size: 2rem;
+        font-weight: var(--fw-semibold);
+    }
+}
+
+
 
 
 

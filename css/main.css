@@ -109,6 +109,10 @@ a {
     font-size: 1.5rem;
     line-height: normal;
   }
+  .fs-bold-title {
+    line-height: normal;
+    font-weight: var(--fw-extra-bold);
+  }
 }
 .primary-button, button[data-icon=download] {
   border: none;
@@ -295,33 +299,19 @@ header .amburger-menu {
 }
 .contact-form {
   gap: 1rem;
-  max-width: 512px;
+  max-width: 35rem;
   border: 1px solid black;
   padding: 1rem;
   display: flex;
   align-items: left;
   justify-content: center;
   flex-flow: wrap column;
-  /*.button-section button
-  {
-      @extend %btn;
-
-      gap: 0.8rem;
-      @extend %btn;
-      @include flex-mixin();
-      min-width: 10rem;
-      max-height: 4rem;
-      border-radius: 0.5rem;
-  }*/
 }
 .contact-form input, .contact-form textarea {
   padding: 1rem 1.5rem;
-  max-width: 32rem;
-  min-width: 28rem;
-  display: block;
   outline: none;
   border-radius: 4px;
-  border: 1.5px solid #000;
+  border: 2px solid #000;
 }
 .contact-form input {
   height: 3.5rem;
@@ -330,12 +320,21 @@ header .amburger-menu {
   resize: none;
 }
 .contact-form .button-section {
+  gap: 32px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-flow: row wrap;
 }
 
+@media screen and (max-width: 500px) {
+  .contact-form .button-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap column;
+  }
+}
 /*Hero header section*/
 .hero-header {
   margin: 1rem auto 6rem;
@@ -593,6 +592,20 @@ header .amburger-menu {
   justify-content: center;
   flex-flow: row wrap;
   border: 2px solid green;
+}
+.contact .contact-content {
+  gap: 2rem;
+  max-width: 38rem;
+  padding: 2rem 4rem;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+
+.contact-infos * {
+  font-size: 2rem;
+  font-weight: var(--fw-semibold);
 }
 
 @media screen and (max-width: 500px) {

@@ -1,7 +1,7 @@
 .contact-form
 {
     gap: 1rem;
-    max-width: 512px;
+    max-width: 35rem;
     @include  border;
     padding: 1rem;
     @include flex-mixin(center, left, wrap, column);
@@ -9,12 +9,9 @@
     input, textarea
     {
         padding: 1rem 1.5rem;
-        max-width: 32rem;
-        min-width: 28rem;
-        display: block;
         outline: none;
         border-radius: 4px;
-        border: 1.5px solid $primary-black;
+        border: 2px solid $primary-black;
     }
 
     input
@@ -29,18 +26,20 @@
 
     .button-section
     {
+        gap: 32px;
         @include flex-mixin(space-between);
     }
 
-    /*.button-section button
+}
+
+
+@media screen  and (max-width: 500px) 
+{
+    .contact-form
     {
-        @extend %btn;
-    
-        gap: 0.8rem;
-        @extend %btn;
-        @include flex-mixin();
-        min-width: 10rem;
-        max-height: 4rem;
-        border-radius: 0.5rem;
-    }*/
+        .button-section
+        {
+            @include flex-mixin(center, center, wrap, column);
+        }
+    }
 }
