@@ -1,14 +1,15 @@
 
 .skills
 {
+    gap: 2rem;
     @include border(2px, green);
     @include flex-mixin(center, center, wrap, column);  
 
     .tech-skills-container
     {
-        $box-general-size: 11.5rem;
+        --box-general-size: 11.5rem;
 
-        gap: 32px;
+        gap: 4rem;
         max-width: 1216px;
         @include flex-mixin();
         @include border(2px, green);
@@ -20,7 +21,24 @@
 {
     .tech-skill
     {
-        width: 1rem;
-        height: 1rem;
+        width: var(--box-general-size);
+        height: var(--box-general-size);
+
+        gap: 2rem;
+        border-radius: 4px;
+        @include border(3px);
+        @include flex-mixin(center, center, wrap, column);
+    }
+}
+
+.tech-skill-black
+{
+    @extend .tech-skill;
+
+    background-color: $primary-black;
+    
+    .skill-name
+    {
+        color: white;
     }
 }

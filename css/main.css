@@ -144,7 +144,7 @@ button[data-icon=download]::after {
   flex-flow: row wrap;
 }
 
-.tech-skill {
+.tech-skill, .tech-skill-black {
   border: 1px solid black;
 }
 
@@ -221,6 +221,7 @@ header .amburger-menu {
   }
 }
 .skills {
+  gap: 2rem;
   border: 2px solid green;
   display: flex;
   align-items: center;
@@ -228,7 +229,8 @@ header .amburger-menu {
   flex-flow: wrap column;
 }
 .skills .tech-skills-container {
-  gap: 32px;
+  --box-general-size: 11.5rem;
+  gap: 4rem;
   max-width: 1216px;
   display: flex;
   align-items: center;
@@ -237,13 +239,27 @@ header .amburger-menu {
   border: 2px solid green;
 }
 
-.tech-skills-container .tech-skill {
-  width: 1rem;
-  height: 1rem;
+.tech-skills-container .tech-skill, .tech-skills-container .tech-skill-black {
+  width: var(--box-general-size);
+  height: var(--box-general-size);
+  gap: 2rem;
+  border-radius: 4px;
+  border: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+
+.tech-skill-black {
+  background-color: #000;
+}
+.tech-skill-black .skill-name {
+  color: white;
 }
 
 .hero-header {
-  margin: auto;
+  margin: 1rem auto 6rem;
   padding: 40px 0;
   border: 2px solid red;
   font-size: 16px;
@@ -298,6 +314,12 @@ header .amburger-menu {
   }
   .hero-header-text * {
     text-align: center;
+  }
+  /* Reseting the position of the social group to make it
+     adapt in the normal flow 
+  */
+  .hero-header-content .social-icons-group {
+    position: static;
   }
 }
 

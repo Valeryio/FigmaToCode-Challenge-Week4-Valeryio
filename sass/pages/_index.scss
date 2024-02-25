@@ -4,7 +4,7 @@
 
 .hero-header
 {
-    margin: auto;
+    margin: 1rem auto 6rem;
     padding: 40px 0;
     @include border(2px, red);
 
@@ -25,12 +25,10 @@
         @include flex-mixin(space-between, start, wrap, column);
     }
 
-
 }
 
 .hero-header-content
 {
-
     *
     {
         @include border;
@@ -88,5 +86,15 @@
         }
     }
 
+    /* Reseting the position of the social group to make it
+       adapt in the normal flow 
+    */
+    .hero-header-content
+    {
+        .social-icons-group
+        {
+            position: static;
+        }
+    }
 
 }
