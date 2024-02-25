@@ -271,6 +271,7 @@ header .amburger-menu {
     gap: 1rem;
   }
 }
+/*Hero header section*/
 .hero-header {
   margin: 1rem auto 6rem;
   padding: 40px 0;
@@ -311,6 +312,74 @@ header .amburger-menu {
   flex-flow: wrap column;
 }
 
+/*Experience section*/
+.experiences {
+  gap: 4rem;
+  padding: 4rem;
+  margin: 4rem auto;
+  color: #f4f4f5;
+  border: 2px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+  background-color: #000;
+}
+.experiences .experiences-section-title {
+  color: white;
+}
+.experiences .experience-box-container {
+  gap: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.experience-box-container .experience-box {
+  gap: 1rem;
+  padding: 24px 30px;
+  max-width: 1168px;
+  border-radius: 8px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+.experience-box-container .gray-box {
+  border: none;
+  background-color: #27272a;
+}
+
+.experience-box .experience-subtitle-informations {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+.experience-box .experience-date {
+  font-weight: 800;
+}
+
+.experience-subtitle-informations {
+  border: 2px solid green;
+}
+.experience-subtitle-informations .experience-subtitle {
+  gap: 2rem;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.experience-subtitle h3 {
+  border: 1px solid black;
+  color: white;
+}
+
 @media screen and (max-width: 500px) {
   .hero-header {
     margin: 0 1rem;
@@ -333,6 +402,28 @@ header .amburger-menu {
   */
   .hero-header-content .social-icons-group {
     position: static;
+  }
+  /*
+      Adapting the options for the experiences section
+  */
+  .experiences {
+    padding: 1rem;
+  }
+  .experience-subtitle-informations {
+    align-items: center;
+    justify-content: center;
+    border: 2px solid violet;
+  }
+  .experience-subtitle-informations .experience-subtitle {
+    gap: 0.02rem;
+  }
+  .experience-subtitle-informations .experience-date {
+    font-size: 16px;
+    text-align: center;
+    border: 2px solid white;
+  }
+  .experience-subtitle h3, .experience-date {
+    text-align: center;
   }
 }
 
