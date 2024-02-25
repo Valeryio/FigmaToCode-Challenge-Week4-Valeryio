@@ -24,3 +24,19 @@ footer
     
     }
 }
+
+
+
+
+@media screen  and (max-width: 500px) 
+{
+    footer
+    {
+        .footer-content
+        {
+            gap: 32px;
+            @include border(2px, red);
+            @include flex-mixin(center, center, wrap, column);
+        }
+    }
+}

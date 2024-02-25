@@ -270,6 +270,16 @@ footer .footer-content {
   flex-flow: wrap column;
 }
 
+@media screen and (max-width: 500px) {
+  footer .footer-content {
+    gap: 32px;
+    border: 2px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap column;
+  }
+}
 .skills {
   gap: 2rem;
   margin: 8rem auto 2rem;
