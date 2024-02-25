@@ -151,7 +151,7 @@
     margin: 2rem auto;
     max-width: 1280px;
 
-    h3
+    h2
     {
         padding: 0;
         @include border(2px, green);
@@ -181,7 +181,33 @@
 
 
 
+/*Project section*/
 
+.projects
+{
+    color: white;
+    background-color: $primary-black;
+
+    
+    margin: 2rem auto;
+    @include flex-mixin(center, center, wrap, column);
+
+    .project-container
+    {
+        max-width: 1280px;
+        @include flex-mixin(center, center, wrap, column);
+
+        *
+        {
+            @include border(2px, white);
+        }
+    }
+}
+
+.project-container
+{
+    
+}
 
 
 
@@ -283,7 +309,7 @@
         gap: 0rem;
         @include flex-mixin(center, center, wrap, column);
 
-        h3
+        h2
         {
             text-align: center;
         }

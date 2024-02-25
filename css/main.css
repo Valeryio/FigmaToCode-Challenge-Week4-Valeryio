@@ -391,7 +391,7 @@ header .amburger-menu {
   margin: 2rem auto;
   max-width: 1280px;
 }
-.about h3 {
+.about h2 {
   padding: 0;
   border: 2px solid green;
 }
@@ -415,6 +415,27 @@ header .amburger-menu {
 }
 .p-container p {
   font-size: 18px;
+}
+
+/*Project section*/
+.projects {
+  color: white;
+  background-color: #000;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+.projects .project-container {
+  max-width: 1280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap column;
+}
+.projects .project-container * {
+  border: 2px solid white;
 }
 
 @media screen and (max-width: 500px) {
@@ -472,7 +493,7 @@ header .amburger-menu {
     justify-content: center;
     flex-flow: wrap column;
   }
-  .about h3 {
+  .about h2 {
     text-align: center;
   }
   .about .about-img {
