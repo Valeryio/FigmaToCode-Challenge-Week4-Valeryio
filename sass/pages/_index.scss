@@ -199,16 +199,37 @@
 
         *
         {
-            @include border(2px, white);
+            // @include border(2px, white);
         }
     }
 }
 
 .project-container
 {
-    
+
+    .project
+    {
+        gap: 2rem;
+        padding: 1rem;
+        @include flex-mixin(center, center, wrap);
+    }
 }
 
+.project
+{
+    .project-content
+    {
+        max-width: 592px;
+    }
+}
+
+.project-content
+{
+    *
+    {
+        margin-bottom: 1rem;
+    }
+}
 
 
 
@@ -317,6 +338,30 @@
         .about-img
         {
             padding: 2rem;
+        }
+    }
+
+
+    /*Adapting the styles for the project section*/
+    .project-container
+    {
+        .project
+        {
+            flex-direction: column;
+        }
+
+        .specific-project
+        {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .project-content
+    {
+        a
+        {
+            display: block;
+
         }
     }
 

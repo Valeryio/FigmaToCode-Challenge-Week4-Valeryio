@@ -51,7 +51,7 @@ a {
   font-weight: var(--fw-semibold);
 }
 
-.fs-bold-title, .fs-regular-subtitle, .fs-regular-title {
+.fs-semibold-title, .fs-bold-title, .fs-regular-subtitle, .fs-regular-title {
   font-size: 3rem;
   text-align: center;
   line-height: 5rem;
@@ -69,6 +69,12 @@ a {
 
 .fs-bold-title {
   font-weight: var(--fw-extra-bold);
+}
+
+.fs-semibold-title {
+  line-height: normal;
+  font-size: 2rem;
+  font-weight: var(--fw-semibold);
 }
 
 .fs-bold-bordered-title {
@@ -93,11 +99,15 @@ a {
 }
 
 @media screen and (max-width: 500px) {
-  .fs-regular-title, .fs-regular-subtitle, .fs-bold-title {
+  .fs-regular-title, .fs-regular-subtitle, .fs-bold-title, .fs-semibold-title {
     font-size: 2.5rem;
     text-align: center;
     line-height: 5rem;
     text-align: left;
+  }
+  .fs-semibold-title {
+    font-size: 1.5rem;
+    line-height: normal;
   }
 }
 button[data-icon=download] {
@@ -434,8 +444,21 @@ header .amburger-menu {
   justify-content: center;
   flex-flow: wrap column;
 }
-.projects .project-container * {
-  border: 2px solid white;
+.project-container .project {
+  gap: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap wrap;
+}
+
+.project .project-content {
+  max-width: 592px;
+}
+
+.project-content * {
+  margin-bottom: 1rem;
 }
 
 @media screen and (max-width: 500px) {
@@ -498,6 +521,16 @@ header .amburger-menu {
   }
   .about .about-img {
     padding: 2rem;
+  }
+  /*Adapting the styles for the project section*/
+  .project-container .project {
+    flex-direction: column;
+  }
+  .project-container .specific-project {
+    flex-direction: column-reverse;
+  }
+  .project-content a {
+    display: block;
   }
 }
 

@@ -59,6 +59,16 @@ a
 }
 
 
+.fs-semibold-title
+{
+    @extend %fs-title;
+
+    line-height: normal;
+    font-size: 2rem;
+    font-weight: var(--fw-semibold);
+}
+
+
 /// The background-clip property is used to fit the black background
 /// to the text
 
@@ -104,6 +114,12 @@ a
         line-height: 5rem;
         text-align: left;
         // letter-spacing: -0.02em;
+    }
+
+    .fs-semibold-title
+    {
+        font-size: 1.5rem;
+        line-height: normal;
     }
     
 }
