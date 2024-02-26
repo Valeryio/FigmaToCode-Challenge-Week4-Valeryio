@@ -142,14 +142,16 @@
     margin: 2rem auto;
     max-width: 1280px;
 
-    h2
+    .about-title
     {
-        padding: 0;
+        padding: 2rem;
+        @include border;
+        line-height: normal;
     }
 
     .about-content
     {
-        gap: 2rem;
+        gap: 1rem;
         @include flex-mixin(center, left, wrap, column);
     }
 }
@@ -180,6 +182,11 @@
     
     margin: 2rem auto;
     @include flex-mixin(center, center, wrap, column);
+
+    .project-section-title
+    {
+        margin: 4rem 0 0 0;
+    }
 
     .project-container
     {

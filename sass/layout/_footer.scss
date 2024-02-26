@@ -32,8 +32,9 @@ footer
     {
         .footer-content
         {
-            gap: 32px;
-            @include flex-mixin(center, center, wrap, column);
+            gap: 2px;
+            padding: 2rem 0.5rem;
+            // @include flex-mixin(center, center, wrap, row);
         }
     }
 }

@@ -270,11 +270,8 @@ footer .footer-content {
 
 @media screen and (max-width: 500px) {
   footer .footer-content {
-    gap: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-flow: wrap column;
+    gap: 2px;
+    padding: 2rem 0.5rem;
   }
 }
 .testimonials {
@@ -538,11 +535,13 @@ footer .footer-content {
   margin: 2rem auto;
   max-width: 1280px;
 }
-.about h2 {
-  padding: 0;
+.about .about-title {
+  padding: 2rem;
+  border: 1px solid black;
+  line-height: normal;
 }
 .about .about-content {
-  gap: 2rem;
+  gap: 1rem;
   display: flex;
   align-items: left;
   justify-content: center;
@@ -571,6 +570,9 @@ footer .footer-content {
   align-items: center;
   justify-content: center;
   flex-flow: wrap column;
+}
+.projects .project-section-title {
+  margin: 4rem 0 0 0;
 }
 .projects .project-container {
   max-width: 1280px;
